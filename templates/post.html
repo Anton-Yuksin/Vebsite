@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class ="container" >
+<div class="alert alert-warning">
+
+           <h3> {{ obj.data_.date() }} </h3>
+    <h2> {{obj.title}} </h2>
+    <p> {{obj.intro}} </p>
+    <p> {{obj.story}} </p>
+    <a href=" "class="btn btn-success">редагувати</a>
+    <a href="/post/{{obj.id}}/delete" class="btn btn-danger ">видалити</a>
+
+
+</div>
+</div>
+
+{% endblock %}

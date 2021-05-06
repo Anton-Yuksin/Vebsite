@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="container bg-secondary">
+    <h2>my db_text</h2>
+    <form method="post">
+        <input type="text" class="alert" name="title" id="title" placeholder="Заголовок"><br>
+        <input type="text" class="alert" name="intro" id="intro" placeholder="коротка зміст"><br>
+        <input type="text" class="alert" name="story" id="story" placeholder="основна частина"><br>
+        <input type="submit" value="вивід бази даних" class="btn btn-outline-secces">
+    </form>
+</div>
+{% endblock %}
