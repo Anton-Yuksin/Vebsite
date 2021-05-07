@@ -53,7 +53,7 @@ def sign():
 def det_post(id):
     lyubiy_object =Blog.query.get(id)
     return render_template("post.html",obj=lyubiy_object)
-
+print(1)
 @myApp.route('/post/<int:id>/delete')
 def delet(id):
     d_art=Blog.query.get_or_404(id)
